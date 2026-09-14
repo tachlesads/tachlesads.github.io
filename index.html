@@ -14,8 +14,8 @@
 <meta property="og:description" content="Google Ads, Meta Ads и продвижение в AI-поиске для бизнеса в Израиле и за рубежом.">
 <meta property="og:url" content="https://tachlesads.github.io/">
 <meta property="og:image" content="https://tachlesads.github.io/photo.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="675">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
@@ -38,8 +38,11 @@ body{
 a{color:var(--blue); text-decoration:none}
 a:hover{text-decoration:underline}
 
-.hero{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover;
-      border-radius:14px; margin:0 0 20px; background:var(--soft)}
+.intro{display:flex; gap:28px; align-items:flex-start; margin:0 0 14px}
+.intro__t{flex:1 1 auto; min-width:0}
+.intro__t p:last-child{margin-bottom:0}
+.avatar{flex:0 0 240px; width:240px; height:auto; aspect-ratio:1/1; object-fit:cover;
+        border-radius:14px; background:var(--soft)}
 h1{font-size:30px; line-height:1.2; letter-spacing:-.02em; margin:0 0 6px; font-weight:800}
 .sub{color:var(--dim); font-size:17px; margin:0 0 4px}
 .loc{color:var(--dim); font-size:15px; margin:0}
@@ -86,7 +89,8 @@ footer{margin-top:52px; padding-top:18px; border-top:1px solid var(--line);
 @media (max-width:560px){
   .wrap{padding:36px 18px 60px}
   h1{font-size:25px}
-  .hero{border-radius:10px; margin-bottom:16px}
+  .intro{flex-direction:column-reverse; gap:18px}
+  .avatar{flex:none; width:100%; border-radius:12px}
   .nums{grid-template-columns:1fr}
   .links a{flex-direction:column; gap:3px}
   .links span{text-align:left}
@@ -97,17 +101,21 @@ footer{margin-top:52px; padding-top:18px; border-top:1px solid var(--line);
 <div class="wrap">
 
   <header>
-    <img class="hero" src="photo.jpg" width="1200" height="675" fetchpriority="high"
-         alt="Александр Короп с ноутбуком на открытой террасе, на фоне — гора Фудзи">
     <h1>Александр Короп</h1>
     <p class="sub">Performance-маркетолог. Google Ads, Meta Ads, продвижение в AI-поиске.</p>
     <p class="loc">Тель-Авив, Израиль</p>
   </header>
 
   <h2>Чем занимаюсь</h2>
-  <p class="lead">Настраиваю и веду платную рекламу для бизнеса в Израиле и за рубежом.</p>
+  <div class="intro">
+    <div class="intro__t">
+    <p class="lead">Настраиваю и веду платную рекламу для бизнеса в Израиле и за рубежом.</p>
   <p>14 лет в цифровом маркетинге, 10 из них покупаю рекламу на свои деньги по партнёрской модели — там доход зависит от результата, а за ошибку платишь лично. Поэтому смотрю на рекламу как на инвестицию: сначала цена целевого действия и окупаемость, потом всё остальное.</p>
   <p>Сейчас веду performance-маркетинг русскоязычного маркетплейса в Израиле, продвигаю недвижимость и услуги локальных специалистов, параллельно тестирую e-commerce на глобальном рынке.</p>
+    </div>
+    <img class="avatar" src="photo.jpg" width="800" height="800" fetchpriority="high"
+         alt="Александр Короп с ноутбуком на открытой террасе, на фоне — гора Фудзи">
+  </div>
 
   <h2>Цифры</h2>
   <div class="nums">
